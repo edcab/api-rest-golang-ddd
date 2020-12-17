@@ -1,1 +1,7 @@
-package api_rest_golang_ddd
+package main
+
+import "fmt"
+
+func main()  {
+	fmt.Println("Hola Mundo")
+}
