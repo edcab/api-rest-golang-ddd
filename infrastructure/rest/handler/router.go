@@ -12,7 +12,7 @@ const (
 )
 
 type Router interface {
-	CreateHandlder()
+	CreateHandler()
 }
 
 type httpHandler struct {

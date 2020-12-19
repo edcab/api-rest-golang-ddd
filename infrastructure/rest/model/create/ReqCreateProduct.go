@@ -1,8 +1,8 @@
 package create
 
 type ReqCreateProduct struct {
-	name        string  `json:"name"`
-	description string  `json:"description"`
-	price       float64 `json:"price"`
-	quantity    int8    `json:"quantity"`
+	Name        string  `json:"name"`
+	Description string  `json:"description"`
+	Price       float64 `json:"price"`
+	Quantity    int8    `json:"quantity"`
 }

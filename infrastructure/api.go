@@ -1,13 +1,13 @@
 package rest
 
 import (
+	"api-rest-golang-ddd/infrastructure/rest/handler"
 	"flag"
 	"fmt"
 	"github.com/go-kit/kit/log"
 	"net/http"
 	"os"
 	"os/signal"
-	"poc-golang-rest-tdd/infrastructure/http/rest/add/handler"
 	"syscall"
 )
 
@@ -19,9 +19,7 @@ type REST struct {
 	API
 }
 
-func (r *REST) Start() {}
-func Start(interface{}) {
-
+func (r *REST) Start() {
 	newHandler := handler.NewHandler()
 	var (
 		httpAddr = flag.String("http.addr", ":8080", "HTTP listen address")

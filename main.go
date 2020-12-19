@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import rest "api-rest-golang-ddd/infrastructure"
 
 func main() {
-	fmt.Println("Hola Mundo")
+
+	api := rest.NewAPI()
+
+	api.Start()
+
 }
